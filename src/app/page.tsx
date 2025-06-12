@@ -4,6 +4,7 @@
 import Navbar from "@/components/navbar/navbar";
 // import SmoothScroll from "@/components/ui/smoothScroll";
 import Homesec from "@/components/sections/home";
+import MyServices from "@/components/sections/service";
 export default function Home() {
   return (
     <div className="bg-slate-900 text-gray-300">
@@ -11,13 +12,15 @@ export default function Home() {
       <Navbar />
       {/* End of Navber */}
       {/* Home */}
-      <section className="mih-screen w-full bg-slate-900" id="home">
+      <section className=" w-full -bg-slate-900" id="home">
         <Homesec />
       </section>
       {/* End of Home */}
       {/* About */}
       {/* <SmoothScroll> */}
-      <section className="h-screen w-full bg-red-900" id="about"></section>
+      <section className="" id="service">
+        <MyServices />
+      </section>
       {/* </SmoothScroll> */}
       {/* End of About */}
       {/* Skills */}
@@ -27,7 +30,7 @@ export default function Home() {
       <section className="h-screen w-full bg-red-800" id="portfolio"></section>
       {/* End of Portfolio */}
       {/* Service */}
-      <section className="h-screen w-full bg-red-300" id="service"></section>
+      <section className="h-screen w-full bg-red-300" id="about"></section>
       {/* End of Service */}
       {/* Contact */}
       <section className="h-screen w-full bg-red-600" id="contact"></section>
