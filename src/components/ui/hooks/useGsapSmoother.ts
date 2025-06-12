@@ -17,15 +17,18 @@ export default function useGsapSmoother() {
         effects: true,
       });
 
+      const isDesktop = window.innerWidth >= 768; // you can tweak this breakpoint
+
       let timeout: NodeJS.Timeout;
 
       const onScroll = () => {
+        if (!isDesktop) return; // 💡 Skip bounce logic for mobile
+
         clearTimeout(timeout);
 
         timeout = setTimeout(() => {
           const scrollY = smoother.scrollTop();
 
-          // Manually select DOM elements
           const wrapper = document.getElementById("smooth-wrapper");
           const content = document.getElementById("smooth-content");
 
@@ -36,8 +39,8 @@ export default function useGsapSmoother() {
 
           const maxScroll = contentHeight - wrapperHeight;
 
-          if (maxScroll - scrollY < 50) {
-            smoother.scrollTo(scrollY - 80, true); // Scroll up smoothly
+          if (maxScroll - scrollY < 50 && scrollY > 80) {
+            smoother.scrollTo(scrollY - 50, true);
           }
         }, 200);
       };
