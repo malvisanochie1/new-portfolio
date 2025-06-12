@@ -38,10 +38,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* ✅ Add these wrappers for GSAP ScrollSmoother */}
-          <div id="smooth-wrapper">
-            <div id="smooth-content">{children}</div>
-          </div>
+          {/* <div id="smooth-wrapper">
+            <div id="smooth-content"> */}
+              {children}
+              {/* </div>
+          </div> */}
         </ThemeProvider>
       </body>
     </html>
