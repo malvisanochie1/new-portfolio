@@ -93,7 +93,7 @@ export default function Homesec() {
                 <p className="text-xs">Projects</p>
               </div>
 
-              <div className="absolute bottom-10 left-0 bg-white text-black rounded-full py-2 px-4 shadow-lg z-20">
+              <div className="absolute bottom-16 left-0 bg-white text-black rounded-full py-2 px-4 shadow-lg z-20">
                 <p className="font-bold text-lg">30+</p>
                 <p className="text-xs">Clients</p>
               </div>
@@ -132,7 +132,7 @@ export default function Homesec() {
                   <LiaFacebookF className="w-5 h-5 text-[#9933ff]" />
                 </Link>
               </div> */}
-              <div className="absolute min-w-fit bottom-2 lg:left-1/3 md:left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm rounded-full px-4 py-2 z-30">
+              <div className="absolute min-w-fit bottom-2 lg:left-5/12 left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-md rounded-full px-4 py-2 z-30">
                 <a
                   href="https://wa.me/1234567890"
                   target="_blank"
