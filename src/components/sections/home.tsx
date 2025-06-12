@@ -28,7 +28,7 @@ export default function Homesec() {
     //   <div></div>
     // </div>
     <div className="min-h-screen bg-[#0a0a16] text-white ">
-      <div className="container- px-4 sm:px-6 lg:px-8 py-12 md:py-20 max-w-6xl mx-auto ">
+      <div className="container- px-4 sm:px-6 lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Content */}
           <div className="lg:w-1/2 space-y-6">
@@ -132,7 +132,7 @@ export default function Homesec() {
                   <LiaFacebookF className="w-5 h-5 text-[#9933ff]" />
                 </Link>
               </div> */}
-              <div className="absolute min-w-fit bottom-2 left-1/3 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm rounded-full px-4 py-2 z-30">
+              <div className="absolute min-w-fit bottom-2 lg:left-1/3 md:left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm rounded-full px-4 py-2 z-30">
                 <a
                   href="https://wa.me/1234567890"
                   target="_blank"

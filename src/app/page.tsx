@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       {/* End of Navber */}
       {/* Home */}
-      <section className="h-screen w-full bg-slate-900" id="home">
+      <section className="mih-screen w-full bg-slate-900" id="home">
         <Homesec />
       </section>
       {/* End of Home */}
