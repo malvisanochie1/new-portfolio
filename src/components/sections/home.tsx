@@ -387,6 +387,7 @@ export default function Homesec() {
                   height={400}
                   className="object-cover- object-bottom"
                 />
+                <div className="absolute top-0 w-full h-full rounded-full bg-black/50"></div>
               </motion.div>
 
               {/* Stats badges */}
