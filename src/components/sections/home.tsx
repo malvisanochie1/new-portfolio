@@ -435,7 +435,7 @@ export default function Homesec() {
               </motion.div>
 
               <motion.div
-                className="absolute min-w-fit bottom-2 lg:left-5/12 left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-md rounded-full px-4 py-2 z-30"
+                className="absolute min-w-fit bottom-2 lg:left-5/12 left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm rounded-full px-4 py-2 z-30"
                 variants={socialVariants}
               >
                 <motion.a
