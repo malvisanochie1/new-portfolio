@@ -381,11 +381,11 @@ export default function Homesec() {
                 }}
               >
                 <Image
-                  src="/home/mal(1).png"
+                  src="/home/malv.png"
                   alt="Web Developer"
                   width={400}
                   height={400}
-                  className="object-cover"
+                  className="object-cover- object-bottom"
                 />
               </motion.div>
 
