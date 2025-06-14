@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/navbar";
 import Homesec from "@/components/sections/home";
 import MyServices from "@/components/sections/service";
 import About_me from "@/components/sections/about_me";
+import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="bg-default text-gray-300">
@@ -27,6 +28,14 @@ export default function Home() {
 
       {/* About me */}
       <section className="relative" id="about">
+       <motion.div
+                      initial={{ opacity: 0.5, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                      }}>
         <div className="w-full overflow-hidden leading-none rotate-180">
           <svg
             viewBox="0 0 1200 120"
@@ -43,6 +52,7 @@ export default function Home() {
           </svg>
         </div>
         <About_me />
+        </motion.div>
       </section>
       {/* End of About me */}
 
