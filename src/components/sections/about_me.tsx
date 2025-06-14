@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import AboutMeImg from "../../../public/home/Developer2.jpg"
 export default function About_me() {
   const [isHovered, setIsHovered] = useState(false);
   const secondaryGlowVariants = {
@@ -52,8 +53,8 @@ export default function About_me() {
   };
 
   return (
-    <section className="relative bg-gray-800/50 py-16 px-4 sm:px-6 flex justify-center items-center min-h-[300px]">
-      <div className="px-4 sm:px-6 lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
+    <section className="relative bg-gray-800/50 py-16 px-4 flex justify-center items-center min-h-[300px]">
+      <div className=" lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
         <div
           className="max-w-6xl w-full bg-gradient-to-r from-pink-500 to-purple-600 p-[1px] rounded-lg overflow-hidden md:max-h-96-"
           onMouseEnter={() => setIsHovered(true)}
@@ -70,7 +71,7 @@ export default function About_me() {
                 <Image
                   width={500}
                   height={250}
-                  src="/home/developer2.jpg"
+                  src={AboutMeImg}
                   alt="Developer looking at code on screen"
                   className="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:rounded-bl-lg max-h-[400px] md:max-h-full md:rounded-none md:rounded-l-lg"
                 />
@@ -78,7 +79,7 @@ export default function About_me() {
             </div>
 
             {/* Content Section */}
-            <div className="md:w-[60%] p-6 md:p-8 flex flex-col justify-center">
+            <div className="md:w-[60%] py-6 px-3 md:p-8 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +105,7 @@ export default function About_me() {
                 </span>
               </h2>
 
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
                 As a Frontend Developer, I specialize in transforming design
                 visions into fully functional, responsive, and accessible user
                 interfaces. I create modern web experiences using HTML, CSS,

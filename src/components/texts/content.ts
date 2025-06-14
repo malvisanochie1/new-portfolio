@@ -105,3 +105,50 @@ export const services = [
     icon: "🛠️",
   },
 ];
+
+export const portfolioWorks = [
+  {
+    id: 1,
+    title: "E-Commerce Platform",
+    description:
+      "Full-stack Next.js application with Stripe integration, user authentication, and admin dashboard",
+    image: "/placeholder.svg?height=200&width=300",
+    technologies: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/example",
+    category: "Web Development",
+  },
+  {
+    id: 2,
+    title: "AI Chat Application",
+    description:
+      "Real-time chat app with AI integration, WebSocket connections, and modern UI/UX design",
+    image: "/placeholder.svg?height=200&width=300",
+    technologies: ["React", "Node.js", "Socket.io", "OpenAI"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/example",
+    category: "AI & Machine Learning",
+  },
+  {
+    id: 3,
+    title: "Mobile Banking App",
+    description:
+      "React Native mobile application with biometric authentication and secure transactions",
+    image: "/placeholder.svg?height=200&width=300",
+    technologies: ["React Native", "Firebase", "Redux", "Expo"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/example",
+    category: "Mobile Development",
+  },
+  {
+    id: 4,
+    title: "Data Visualization Dashboard",
+    description:
+      "Interactive dashboard with real-time analytics, charts, and comprehensive reporting features",
+    image: "/placeholder.svg?height=200&width=300",
+    technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/example",
+    category: "Data Science",
+  },
+];
