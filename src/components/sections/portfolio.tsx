@@ -12,13 +12,15 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  technologies: string[];
-  liveUrl: string;
-  githubUrl: string;
-  category: string;
-  links: string[];
-  label: string;
-  url: string;
+  // optional array of technology names
+  technologies?: string[];
+  // optional URLs
+  liveUrl?: string;
+  githubUrl?: string;
+  // optional category/title string
+  category?: string;
+  // links is an optional array of objects with label and url (matches content.ts)
+  links?: { label: string; url: string }[];
 }
 
 interface HoverEffectProps {
