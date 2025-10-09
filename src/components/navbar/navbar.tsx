@@ -113,15 +113,15 @@ export default function Navbar() {
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between p-4 border-b border-gray-800">
+        <div className="flex items-center justify-between p-4 border-b border-gray-800 pe-3">
           <h1 className="text-white text-xl font-semibold">
-            Chris<span className="text-pink-500">Smith</span>
+            Chisom<span className="text-pink-500">Malvis</span>
           </h1>
           <Button
             variant="ghost"
             size="icon"
             onClick={toggleMobileMenu}
-            className="text-gray-300 hover:text-white hover:bg-gray-800"
+            className="text-gray-300 hover:text-white hover:bg-gray-800 me-5"
           >
             <X className="h-6 w-6" />
           </Button>
