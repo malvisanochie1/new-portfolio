@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { MdOutlineAttachEmail } from "react-icons/md";
 
 const contact = () => {
   return (
@@ -72,13 +73,19 @@ const contact = () => {
                       <button className="block rounded-lg text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 md:text-base ">
                         SEND{" "}
                       </button>
-
                       <Link
                         href="https://wa.me/+2348121437432?text=Hello%20Malvis%20👋%0AComing%20from%20your%20Portfolio"
                         target="blank"
                         className="whatsapp"
                       >
                         <IoLogoWhatsapp />
+                      </Link>
+                      <Link
+                        href="mailto:malvisanochie97@gmail.com"
+                        target="blank"
+                        className="whatsapp"
+                      >
+                        <MdOutlineAttachEmail />
                       </Link>
                     </div>
                   </div>

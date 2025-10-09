@@ -33,7 +33,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className=" py-10 px-2 md:px-10">
+    <div className=" px-2 md:px-10  lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
       {/* Header */}
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}

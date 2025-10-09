@@ -3,7 +3,7 @@ import React from "react";
 const eduction = () => {
   return (
     <div className="py-10 mt-10 md:mt-20 lg:mt-32 px-3 md:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 max-w-6xl mx-auto">
         <div className="mt-4 rounded-2xl py-10 px-4 bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none w-full group transition-all duration-700 ease-in-out">
           <div className="flex items-center gap-4 h-full">
             <div className="h-full flex flex-col items-center justify-center py-2 rounded-full">
