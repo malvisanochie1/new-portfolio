@@ -186,7 +186,7 @@ const services = [
 
 export default function MyServices() {
   return (
-    <section className="bg-default py-16 ">
+    <section className="bg-default py-16 " id="service">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.h1

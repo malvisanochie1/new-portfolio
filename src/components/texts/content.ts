@@ -109,46 +109,50 @@ export const services = [
 export const portfolioWorks = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "A Food landing page",
     description:
-      "Full-stack Next.js application with Stripe integration, user authentication, and admin dashboard",
-    image: "/placeholder.svg?height=200&width=300",
-    technologies: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    category: "Web Development",
+      "figma to nextjs Modern food delivery web app for healthy, delicious meals. Built with Next.js and Tailwind CSS for a fast, seamless user experience.",
+    image: "/home/work1.jpg",
+    links: [
+      {
+        label: "figma",
+        url: "https://www.figma.com/design/dtk0yVzXhUUm1nUj83Ovbe/Eriggo?node-id=14266-33902&t=AVvPDRu6fdzaGIer-0",
+      },
+      { label: "live", url: "https://www.eriggo.com/" },
+      { label: "github", url: "https://github.com/malvisanochie1/errigo" },
+    ],
+    liveUrl: "https://www.eriggo.com/",
+    githubUrl: "https://github.com/malvisanochie1/errigo",
   },
   {
     id: 2,
-    title: "AI Chat Application",
+    title: "Plain HTML CSS and JS Exchange landing page",
     description:
-      "Real-time chat app with AI integration, WebSocket connections, and modern UI/UX design",
-    image: "/placeholder.svg?height=200&width=300",
-    technologies: ["React", "Node.js", "Socket.io", "OpenAI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    category: "AI & Machine Learning",
+      "HTML/CSS/JS landing site (Vercel) showcasing rates, services and mobile app downloads for Ridimit Exchange.",
+    image: "/home/work2.jpg",
+    links: [
+      { label: "live", url: "https://ridimit-exchange.vercel.app/" },
+      {
+        label: "github",
+        url: "https://github.com/malvisanochie1/Ridimit-Exchange.git",
+      },
+    ],
+    liveUrl: "https://ridimit-exchange.vercel.app/",
+    githubUrl: "https://github.com/malvisanochie1/Ridimit-Exchange.git",
+    category: "Plain HTML CSS and JS Exchange landing page",
   },
   {
     id: 3,
     title: "Mobile Banking App",
     description:
-      "React Native mobile application with biometric authentication and secure transactions",
-    image: "/placeholder.svg?height=200&width=300",
-    technologies: ["React Native", "Firebase", "Redux", "Expo"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    category: "Mobile Development",
-  },
-  {
-    id: 4,
-    title: "Data Visualization Dashboard",
-    description:
-      "Interactive dashboard with real-time analytics, charts, and comprehensive reporting features",
-    image: "/placeholder.svg?height=200&width=300",
-    technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
-    category: "Data Science",
+      "A trading site with lots of reuseable pages, built with Nextjs, typescript and Tailwind CSS for a fast, seamless user experience.",
+    image: "/home/work3.jpg",
+    links: [
+      { label: "live", url: "https://ebultrading.vercel.app/trading/buy_crypto" },
+      { label: "github", url: "https://github.com/malvisanochie1/ebultrading.git" },
+    ],
+    liveUrl: "https://ebultrading.vercel.app/trading/buy_crypto",
+    githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
+    category: "Nextjs and Tailwind",
   },
 ];

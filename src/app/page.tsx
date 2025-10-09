@@ -11,28 +11,14 @@ import { motion } from "framer-motion";
 // import PortfolioCards from "@/components/sections/portfolio";
 import { HoverEffect } from "@/components/sections/portfolio";
 import { portfolioWorks } from "@/components/texts/content";
-
-
+import Contact from "@/components/sections/contact";
+import Education from "@/components/sections/eduction";
 export default function Home() {
-  
   return (
     <div className="bg-default text-gray-300">
-      {/* Navbar */}
       <Navbar />
-      {/* End of Navber */}
-      {/* Home */}
-      <section className=" w-full -bg-slate-900" id="home">
-        <Homesec />
-      </section>
-      {/* End of Home */}
-
-      {/* Service */}
-      <section className="" id="service">
-        <MyServices />
-      </section>
-      {/* End of Service */}
-
-      {/* About me */}
+      <Homesec />
+      <MyServices />
       <section className="relative" id="about">
         <motion.div
           initial={{ opacity: 0.5, y: 100 }}
@@ -62,17 +48,9 @@ export default function Home() {
         </motion.div>
       </section>
       {/* End of About me */}
-
-      {/* Skills */}
-      {/* <section className="h-screen w-full bg-red-200" id="skills"></section> */}
-      {/* End of Skills */}
-      {/* Portfolio */}
-      <section className="" id="portfolio"></section>
-      {/* End of Portfolio */}
-      <HoverEffect items={portfolioWorks}/>
-      {/* Contact */}
-      <section className="h-screen w-full bg-red-600" id="contact"></section>
-      {/* End of Contact */}
+      <Education />
+      <HoverEffect items={portfolioWorks} />
+      <Contact />
     </div>
   );
 }
