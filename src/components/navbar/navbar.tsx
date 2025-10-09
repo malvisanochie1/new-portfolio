@@ -1,16 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import { useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";  
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-// import Image from "next/image";
-// import Logo from "@/public/logo/logo1.png";
 const navigationItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "Service", href: "#service" },
   { name: "Contact", href: "#contact" },
@@ -51,9 +47,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              {/* <Image width={500} height={50} src="/logo/logo1.png" className="h-10 object-contain" alt="" /> */}
               <Link href="/" className="text-xl font-semibold text_gradient">
-               
                 Chisom<span className="text-gray-300">Malvis</span>
               </Link>
             </div>

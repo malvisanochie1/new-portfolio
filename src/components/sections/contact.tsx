@@ -3,8 +3,87 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineAttachEmail } from "react-icons/md";
+import { useEffect, useState } from "react";
+import { useMutation } from "@tanstack/react-query";
+import toast from "react-hot-toast";
 
-const contact = () => {
+export default function Contact() {
+  const FORM_ENDPOINT = "https://formspree.io/f/xnngbyrk"; // <- replace
+  const STORAGE_KEY = "portfolio_form_submissions";
+  const LIMIT = 3;
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    company: "",
+    interest: "",
+    message: "",
+  });
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    try {
+      const parsed = JSON.parse(raw);
+      setCount(parsed?.count ?? 0);
+    } catch (_) {}
+  }, []);
+
+  const mutation = useMutation({
+    mutationFn: async (payload: {
+      name: string;
+      email: string;
+      company: string;
+      interest: string;
+      message: string;
+    }) => {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => null);
+        throw new Error(err?.message || "Failed to send");
+      }
+      return res;
+    },
+    onSuccess: () => {
+      const newCount = count + 1;
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ count: newCount, lastSaved: Date.now() })
+      );
+      setCount(newCount);
+      setForm({ name: "", email: "", company: "", interest: "", message: "" });
+      toast.success(`✅ Message sent! (${newCount}/${LIMIT})`);
+    },
+    onError: (error: unknown) => {
+      const errorMessage =
+        error && typeof error === "object" && "message" in error
+          ? (error as { message?: string }).message
+          : undefined;
+      toast.error(errorMessage || "❌ Failed to send message");
+    },
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (count >= LIMIT) {
+      toast.error("⚠️ You have reached the maximum number of submissions.");
+      return;
+    }
+    mutation.mutate(form);
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => setForm({ ...form, [e.target.name]: e.target.value });
+
   return (
     <div className="h-full w-full bg-[#0a0a16] mb-10" id="contact">
       <div className="h-full rounded-2xl relative overflow-hidden  mx-auto md:max-w-[93%]">
@@ -22,28 +101,32 @@ const contact = () => {
                 <h2 className="mb-4 text-center text-2xl font-bold text-white md:mb- lg:text-3xl">
                   Get in touch
                 </h2>
-                <form className="">
+                <form className="" onSubmit={handleSubmit} method="POST">
                   <div className="flex flex-col py-4 sm:pb-8 px-4 gap-4">
                     <div>
-                      {/* <label htmlFor="name" className="label">
-                        NAME
-                      </label> */}
                       <input
                         type="text"
                         name="name"
                         placeholder="Enter your name"
                         className="input"
+                        value={form.name}
+                        onChange={handleChange}
+                        disabled={
+                          count >= LIMIT || mutation.status === "pending"
+                        }
                       />
                     </div>
                     <div>
-                      {/* <label htmlFor="email" className="label">
-                        Email
-                      </label> */}
                       <input
                         type="email"
                         name="email"
                         placeholder="Enter your email"
                         className="input"
+                        value={form.email}
+                        onChange={handleChange}
+                        disabled={
+                          count >= LIMIT || mutation.status === "pending"
+                        }
                       />
                     </div>
                     <div>
@@ -52,6 +135,11 @@ const contact = () => {
                         type="text"
                         name="company"
                         className="input"
+                        value={form.company}
+                        onChange={handleChange}
+                        disabled={
+                          count >= LIMIT || mutation.status === "pending"
+                        }
                       />
                     </div>
                     <div>
@@ -60,18 +148,37 @@ const contact = () => {
                         name="interest"
                         placeholder="interested in..."
                         className="input"
+                        value={form.interest}
+                        onChange={handleChange}
+                        disabled={
+                          count >= LIMIT || mutation.status === "pending"
+                        }
                       />
                     </div>
                     <textarea
-                      name=""
+                      name="message"
                       placeholder="Message"
-                      id=""
                       rows={4}
                       className="textarea"
-                    ></textarea>
+                      value={form.message}
+                      onChange={handleChange}
+                      disabled={count >= LIMIT || mutation.status === "pending"}
+                    />
                     <div className="flex gap-4 items-center justify-end px-4 md:px-8 pt-4">
-                      <button className="block rounded-lg text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 md:text-base ">
-                        SEND{" "}
+                      <button
+                        type="submit"
+                        disabled={
+                          count >= LIMIT || mutation.status === "pending"
+                        }
+                        className={`block rounded-lg text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 md:text-base  ${
+                          LIMIT ? "cursor-pointer" : "cursor-not-allowed"
+                        } `}
+                      >
+                        {mutation.status === "pending"
+                          ? "Sending..."
+                          : count >= LIMIT
+                          ? "Limit Reached"
+                          : "Send Message"}
                       </button>
                       <Link
                         href="https://wa.me/+2348121437432?text=Hello%20Malvis%20👋%0AComing%20from%20your%20Portfolio"
@@ -111,6 +218,4 @@ const contact = () => {
       </div>
     </div>
   );
-};
-
-export default contact;
+}

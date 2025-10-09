@@ -13,6 +13,7 @@ import { HoverEffect } from "@/components/sections/portfolio";
 import { portfolioWorks } from "@/components/texts/content";
 import Contact from "@/components/sections/contact";
 import Education from "@/components/sections/eduction";
+
 export default function Home() {
   return (
     <div className="bg-default text-gray-300">

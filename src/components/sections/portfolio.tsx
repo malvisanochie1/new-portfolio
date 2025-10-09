@@ -6,20 +6,17 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 // import { div } from "framer-motion/client";
 import { GrTestDesktop } from "react-icons/gr";
+import Link from "next/link";
 
 export interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
-  // optional array of technology names
   technologies?: string[];
-  // optional URLs
   liveUrl?: string;
   githubUrl?: string;
-  // optional category/title string
   category?: string;
-  // links is an optional array of objects with label and url (matches content.ts)
   links?: { label: string; url: string }[];
 }
 
@@ -70,8 +67,8 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
         )}
       >
         {items.map((item, idx) => (
-          <a
-            href={item.liveUrl}
+          <Link
+            href={item.liveUrl ?? "#"}
             key={item.id}
             className="relative group block p-2 h-full w-full"
             target="_blank"
@@ -110,19 +107,19 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
               <CardDescription>{item.description}</CardDescription>
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-zinc-400">
                 {item.links?.map((link, index) => (
-                  <a
+                  <div
                     key={index}
-                    href={link.url}
-                    target="_blank"
+                    // href={link.url}
+                    // target="_blank"
                     rel="noopener noreferrer"
                     className="bg-zinc-700 px-2 py-1 rounded-full text-xs hover:bg-zinc-600 transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </div>
                 ))}
               </div>
             </Card>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

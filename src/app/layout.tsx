@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ReactQueryProvider } from "@/components/query-provider";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +40,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div id="smooth-wrapper">
-            <div id="smooth-content">{children}</div>
-          </div>
+          <ReactQueryProvider>
+            <div id="smooth-wrapper">
+              <div id="smooth-content">{children}</div>
+              <Toaster position="top-right" />
+            </div>
+          </ReactQueryProvider>
         </ThemeProvider>
       </body>
     </html>
