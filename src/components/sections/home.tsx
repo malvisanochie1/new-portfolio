@@ -325,13 +325,13 @@ export default function Homesec() {
                 }}
               >
                 <Image
-                  src="/home/one.png"
+                  src="/home/profile.png"
                   alt="Web Developer"
                   width={400}
                   height={400}
                   className="object-cover- object-bottom"
                 />
-                <div className="absolute top-0 w-full h-full rounded-full bg-black/50"></div>
+                <div className="absolute top-0 w-full h-full rounded-full bg-black/30"></div>
               </motion.div>
 
               {/* Stats badges */}
