@@ -27,7 +27,7 @@ export default function Contact() {
     try {
       const parsed = JSON.parse(raw);
       setCount(parsed?.count ?? 0);
-    } catch (_) {}
+    } catch {}
   }, []);
 
   const mutation = useMutation({
