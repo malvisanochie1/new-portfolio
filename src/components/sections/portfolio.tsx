@@ -74,11 +74,11 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
         )}
       >
         {items.map((item, idx) => (
-          <Link
-            href={item.liveUrl ?? "#"}
+          <div
+            // href={item.liveUrl ?? "#"}
             key={item.id}
             className="relative group block p-2 h-full w-full"
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -102,31 +102,34 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             </AnimatePresence>
 
             <Card>
-              <Image
-                src={item.image}
-                alt={item.title}
-                className="rounded-xl mb-4 w-full h-40 object-cover"
-                width={400}
-                height={160}
-                unoptimized
-              />
+              <Link href={item.liveUrl ?? "#"} target="blank">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  className="rounded-lg mb-4 w-full h-40 object-cover"
+                  width={400}
+                  height={160}
+                  unoptimized
+                />
+              </Link>
+
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-zinc-400">
                 {item.links?.map((link, index) => (
-                  <div
+                  <Link
                     key={index}
-                    // href={link.url}
-                    // target="_blank"
+                    href={link.url}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="bg-zinc-700 px-2 py-1 rounded-full text-xs hover:bg-zinc-600 transition-colors"
                   >
                     {link.label}
-                  </div>
+                  </Link>
                 ))}
               </div>
             </Card>
-          </Link>
+          </div>
         ))}
       </div>
     </div>
