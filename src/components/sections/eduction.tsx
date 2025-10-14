@@ -64,13 +64,13 @@ const eduction = () => {
               </div>
             </div>
             <div className="text-gray-200 relative">
-              <p className="text-base sm:text-lg font-medium pb-3">
+              <p className="text-base sm:text-lg font-medium pb-5">
                 2019
               </p>
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
+              <h2 className="text-lg sm:text-xl md:text-2xl pt-5 font-bold">
                 New Hope Academy{" "}
               </h2>
-              <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transform duration-300 ">
+             <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transform duration-300 ">
                 WAEC
               </span>
             </div>
