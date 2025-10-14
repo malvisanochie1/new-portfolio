@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import AboutMeImg from "../../../public/home/Developer2.jpg"
+import AboutMeImg from "../../../public/home/Developer2.jpg";
 export default function About_me() {
   const [isHovered, setIsHovered] = useState(false);
   const secondaryGlowVariants = {
@@ -106,21 +106,22 @@ export default function About_me() {
               </h2>
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                As a Frontend Developer, I specialize in transforming design
-                visions into fully functional, responsive, and accessible user
-                interfaces. I create modern web experiences using HTML, CSS,
-                JavaScript, and frameworks such as React, Next.js, and Tailwind
-                CSS. With a sharp eye for detail and a deep understanding of
-                UI/UX principles, I craft interfaces that are not only visually
-                appealing but also intuitive and user-friendly. I am skilled in
-                integrating APIs, handling dynamic state, and building reusable
-                components, which makes my code scalable and maintainable. My
-                commitment to clean code, performance optimization, and
-                cross-browser compatibility ensures every project is delivered
-                to professional standards. Whether building from scratch or
-                improving an existing product, I bring a problem-solving mindset
-                and client-first approach to every task — helping businesses and
-                startups turn their ideas into successful digital solutions.
+                s a Frontend Developer, I specialize in transforming design
+                visions into fully functional, responsive, and accessible web
+                experiences. With deep expertise in React, Next.js, and Tailwind
+                CSS, I build pixel-perfect interfaces directly from Figma —
+                ensuring every spacing, typography, and animation detail matches
+                the original design.
+                <br />
+                <br />
+                My strength lies in creating component-based architectures that
+                are scalable, maintainable, and optimized for performance. I’m
+                passionate about bridging the gap between design and development
+                — turning static UI concepts into fast, interactive, and
+                visually precise user experiences. Whether building from scratch
+                or improving existing products, I bring a creative eye,
+                technical precision, and a relentless commitment to delivering
+                high-quality frontends that truly stand out.
               </p>
 
               <div className="inline w-fit mt-5">
