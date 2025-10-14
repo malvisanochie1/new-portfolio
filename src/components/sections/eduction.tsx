@@ -17,7 +17,7 @@ const eduction = () => {
             </div>
             <div className="text-gray-200 relative">
               <p className="text-base sm:text-lg font-medium pb-3">
-                2024 - 2016
+                2024 - 2026
               </p>
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
                 Delta State Polytechnic Ogwashi-uku{" "}
