@@ -325,7 +325,7 @@ export default function Homesec() {
                 }}
               >
                 <Image
-                  src="/home/profile.png"
+                  src="/home/malv.png"
                   alt="Web Developer"
                   width={400}
                   height={400}
