@@ -106,7 +106,7 @@ export default function About_me() {
               </h2>
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                s a Frontend Developer, I specialize in transforming design
+                As a Frontend Developer, I specialize in transforming design
                 visions into fully functional, responsive, and accessible web
                 experiences. With deep expertise in React, Next.js, and Tailwind
                 CSS, I build pixel-perfect interfaces directly from Figma —
