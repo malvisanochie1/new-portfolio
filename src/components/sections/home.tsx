@@ -331,7 +331,7 @@ export default function Homesec() {
                   height={400}
                   className="object-cover- object-bottom"
                 />
-                <div className="absolute top-0 w-full h-full rounded-full bg-black/30"></div>
+                <div className="absolute top-0 w-full h-full rounded-full bg-black/20"></div>
               </motion.div>
 
               {/* Stats badges */}
@@ -366,18 +366,21 @@ export default function Homesec() {
                 className="absolute min-w-fit bottom-2 lg:left-5/12 left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm bg-[#ffffff13] rounded-full px-4 py-2 z-30"
                 variants={socialVariants}
               >
-                <motion.a
-                  href="https://wa.me/1234567890"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
+                <motion.div
                   variants={socialIconVariants}
                   whileHover="hover"
+                  className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
                 >
-                  <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
-                    <FaWhatsapp />
-                  </span>
-                </motion.a>
+                  <Link
+                    href="https://wa.me/+2348121437432?text=Hello%20Malvis%20👋%0AComing%20from%20your%20Portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
+                      <FaWhatsapp />
+                    </span>
+                  </Link>
+                </motion.div>
                 <motion.a
                   href="https://instagram.com"
                   target="_blank"

@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import { FaPuzzlePiece } from "react-icons/fa6";
 import { MdSpeed } from "react-icons/md";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
-
+import Link from "next/link";
 export const services = [
   {
     title: "React & Next.js UI Development",
@@ -193,12 +193,15 @@ export default function MyServices() {
                     {service.description}
                   </p>
                   <div className="pt-2">
-                    <button className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors duration-300 group-hover:translate-x-1 transform inline-flex items-center gap-2">
+                    <Link
+                      href="#contact"
+                      className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors duration-300 group-hover:translate-x-1 transform inline-flex items-center gap-2"
+                    >
                       Learn More
                       <span className="group-hover:translate-x-1 transition-transform duration-300">
                         →
                       </span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
