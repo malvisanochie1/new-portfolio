@@ -54,10 +54,10 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             <h2 className="text-white text-2xl font-bold">My Portfolio</h2>
           </div>
           <p className="text-gray-400 text-sm max-w-2xl">
-            Every project I create is built with a strong focus on
-            clean design, responsiveness, and performance. From concept to
-            deployment, I translate ideas into visually appealing and functional
-            web experiences using React, Next.js, and Tailwind CSS.
+            Every project I create is built with a strong focus on clean design,
+            responsiveness, and performance. From concept to deployment, I
+            translate ideas into visually appealing and functional web
+            experiences using React, Next.js, and Tailwind CSS.
             <br />
             <br />
             This collection showcases my work across different areas — from
