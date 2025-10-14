@@ -366,69 +366,86 @@ export default function Homesec() {
                 className="absolute min-w-fit bottom-2 lg:left-5/12 left-1/2 transform -translate-x-1/2 flex gap-3 backdrop-blur-sm bg-[#ffffff13] rounded-full px-4 py-2 z-30"
                 variants={socialVariants}
               >
-                <motion.div
+                <motion.span
                   variants={socialIconVariants}
                   whileHover="hover"
-                  className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
+                  className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100 w-fit h-fit"
                 >
                   <Link
                     href="https://wa.me/+2348121437432?text=Hello%20Malvis%20👋%0AComing%20from%20your%20Portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="max-h-5"
                   >
                     <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
                       <FaWhatsapp />
                     </span>
                   </Link>
-                </motion.div>
-                <motion.a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </motion.span>
+                <motion.span
                   className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
                   variants={socialIconVariants}
                   whileHover="hover"
                 >
-                  <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
-                    <FaInstagram />
-                  </span>
-                </motion.a>
-                <motion.a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <Link
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="max-h-5"
+                  >
+                    <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
+                      <FaInstagram />
+                    </span>
+                  </Link>
+                </motion.span>
+                <motion.span
                   className="inline-flex items-center justify-center p-1.5 gradient rounded-full gradient"
                   variants={socialIconVariants}
                   whileHover="hover"
                 >
-                  <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full  bg-gray-100 text-xl transition duration-300">
-                    <FaLinkedinIn className=" text-[#C42DA0]" />{" "}
-                  </span>
-                </motion.a>
-                <motion.a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <Link
+                    href="https://www.linkedin.com/in/malvis-nwakonobi-67b644277/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="max-h-5"
+                  >
+                    <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient- bg-gray-200 text-xl transition duration-300">
+                      <FaLinkedinIn className=" text-[#C42DA0]" />{" "}
+                    </span>
+                  </Link>
+                </motion.span>
+                <motion.span
                   className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
                   variants={socialIconVariants}
                   whileHover="hover"
                 >
-                  <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
-                    <PiGithubLogoFill />
-                  </span>
-                </motion.a>
-                <motion.a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <Link
+                    href="https://github.com/malvisanochie1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="max-h-5"
+                  >
+                    <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
+                      <PiGithubLogoFill />
+                    </span>
+                  </Link>
+                </motion.span>
+                <motion.span
                   className="inline-flex items-center justify-center p-1.5 rounded-full bg-gray-100"
                   variants={socialIconVariants}
                   whileHover="hover"
                 >
-                  <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
-                    <LiaFacebookF />
-                  </span>
-                </motion.a>
+                  <Link
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="max-h-5"
+                  >
+                    <span className="inline-flex items-center justify-center w-5 h-5 p-1 rounded-full gradient text-gray-200 text-xl transition duration-300">
+                      <LiaFacebookF />
+                    </span>
+                  </Link>
+                </motion.span>
               </motion.div>
             </div>
           </motion.div>
