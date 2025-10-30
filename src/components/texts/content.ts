@@ -157,4 +157,20 @@ export const portfolioWorks = [
     githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
     category: "Nextjs and Tailwind",
   },
+  {
+    id: 4,
+    title: "Responsive trading dashboard",
+    description:
+      "crated this amazing trading dashboard with light and dark mode using nextjs, Shadcn, and tailwind css for a seamless user experience",
+    image: "/home/work3.jpg",
+    links: [
+      {
+        label: "live",
+        url: "https://csc-gamma.vercel.app/dashboard",
+      },
+    ],
+    liveUrl: "https://csc-gamma.vercel.app/dashboard",
+    githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
+    category: "Nextjs, Shadcn, and Tailwind",
+  },
 ];
