@@ -135,7 +135,7 @@ export default function About_me() {
                 user-friendly across devices.
                 <br />
                 <br />
-                I'm constantly improving my skills in API integration, state
+                I&apos;updatedm constantly improving my skills in API integration, state
                 management, and full-stack fundamentals to build even more
                 dynamic and production-ready web apps.
                 <br />
