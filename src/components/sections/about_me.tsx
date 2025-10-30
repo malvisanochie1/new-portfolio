@@ -101,11 +101,11 @@ export default function About_me() {
 
               <h2 className="text-white text-2xl md:text-3xl font-bold mb-3">
                 <span className="text_gradient my-2">
-                  A Frontend Web Developer
+                  A Frontend UI Developer
                 </span>
               </h2>
 
-              <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
+              {/* <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
                 As a Frontend Developer, I specialize in transforming design
                 visions into fully functional, responsive, and accessible web
                 experiences. With deep expertise in React, Next.js, and Tailwind
@@ -122,6 +122,28 @@ export default function About_me() {
                 or improving existing products, I bring a creative eye,
                 technical precision, and a relentless commitment to delivering
                 high-quality frontends that truly stand out.
+              </p> */}
+              <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
+                I specialize in building clean, responsive, and visually
+                polished web interfaces using React, Next.js, and Tailwind CSS.
+                I turn Figma designs into pixel-perfect, interactive frontends
+                with smooth animations, scalable components, and modern UI
+                practices. 
+                <br />
+                I value clarity, performance, and a professional design finish —
+                ensuring every layout is consistent, well-structured, and
+                user-friendly across devices.
+                <br />
+                <br />
+                I'm constantly improving my skills in API integration, state
+                management, and full-stack fundamentals to build even more
+                dynamic and production-ready web apps.
+                <br />
+                <br />
+                Whether it’s a landing page, dashboard, or multi-page platform,
+                I bring a strong design eye, modern development workflow, and a
+                commitment to delivering clean, high-quality code and
+                interfaces.
               </p>
 
               <div className="inline w-fit mt-5">
