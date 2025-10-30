@@ -104,40 +104,21 @@ export default function About_me() {
                   A Frontend UI Developer
                 </span>
               </h2>
-
-              {/* <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                As a Frontend Developer, I specialize in transforming design
-                visions into fully functional, responsive, and accessible web
-                experiences. With deep expertise in React, Next.js, and Tailwind
-                CSS, I build pixel-perfect interfaces directly from Figma —
-                ensuring every spacing, typography, and animation detail matches
-                the original design.
-                <br />
-                <br />
-                My strength lies in creating component-based architectures that
-                are scalable, maintainable, and optimized for performance. I’m
-                passionate about bridging the gap between design and development
-                — turning static UI concepts into fast, interactive, and
-                visually precise user experiences. Whether building from scratch
-                or improving existing products, I bring a creative eye,
-                technical precision, and a relentless commitment to delivering
-                high-quality frontends that truly stand out.
-              </p> */}
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
                 I specialize in building clean, responsive, and visually
                 polished web interfaces using React, Next.js, and Tailwind CSS.
                 I turn Figma designs into pixel-perfect, interactive frontends
                 with smooth animations, scalable components, and modern UI
-                practices. 
+                practices.
                 <br />
                 I value clarity, performance, and a professional design finish —
                 ensuring every layout is consistent, well-structured, and
                 user-friendly across devices.
                 <br />
                 <br />
-                I&apos;updatedm constantly improving my skills in API integration, state
-                management, and full-stack fundamentals to build even more
-                dynamic and production-ready web apps.
+                I&apos;updatedm constantly improving my skills in API
+                integration, state management, and full-stack fundamentals to
+                build even more dynamic and production-ready web apps.
                 <br />
                 <br />
                 Whether it’s a landing page, dashboard, or multi-page platform,
