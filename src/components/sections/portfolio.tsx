@@ -85,6 +85,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
+                
                 <motion.span
                   className="absolute inset-0 h-full w-full bg-slate-700 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"

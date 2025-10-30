@@ -162,7 +162,7 @@ export const portfolioWorks = [
     title: "Responsive trading dashboard",
     description:
       "crated this amazing trading dashboard with light and dark mode using nextjs, Shadcn, and tailwind css for a seamless user experience",
-    image: "/home/work3.jpg",
+    image: "/home/work4.jpg",
     links: [
       {
         label: "live",
