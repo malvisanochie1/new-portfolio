@@ -17,7 +17,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   category?: string;
-  links?: { label: string; url: string }[];
+  links?: { label: string; url?: string }[];
 }
 
 interface HoverEffectProps {
@@ -35,7 +35,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
     <div className=" px-2 md:px-10  lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
       {/* Header */}
       <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0.5, y: 65 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
@@ -86,7 +86,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                  className="absolute inset-0 h-full w-full bg-slate-700 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -101,8 +101,19 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
               )}
             </AnimatePresence>
 
-            <Card>
-              <Link href={item.liveUrl ?? "#"} target="blank">
+            <Card className="border border-slate-700">
+              {item.liveUrl ? (
+                <Link href={item.liveUrl} target="_blank">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="rounded-lg mb-4 w-full h-40 object-cover"
+                    width={400}
+                    height={160}
+                    unoptimized
+                  />
+                </Link>
+              ) : (
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -111,22 +122,24 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
                   height={160}
                   unoptimized
                 />
-              </Link>
+              )}
 
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-zinc-400">
-                {item.links?.map((link, index) => (
-                  <Link
-                    key={index}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-zinc-700 px-2 py-1 rounded-full text-xs hover:bg-zinc-600 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {item.links?.map((link, index) =>
+                  link?.url ? (
+                    <Link
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-zinc-700 px-2 py-1 rounded-full text-xs hover:bg-zinc-600 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : null
+                )}
               </div>
             </Card>
           </div>

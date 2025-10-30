@@ -16,9 +16,15 @@ const eduction = () => {
               </div>
             </div>
             <div className="text-gray-200 relative">
-              <p className="text-base sm:text-lg font-medium pb-3">
-                2024 - 2026
-              </p>
+              <div className="flex flex-wrap space-x-2 justify-between items-center">
+                <p className="text-base sm:text-lg font-medium pb-3">
+                  2024 - 2026
+                </p>
+                <p className="text-xs sm:text-lg- font-extrabold pb-3 text-[#201654]">
+                  SOFTWARE & WEB DEV{" "}
+                </p>
+              </div>
+
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
                 Delta State Polytechnic Ogwashi-uku{" "}
               </h2>
@@ -40,9 +46,14 @@ const eduction = () => {
               </div>
             </div>
             <div className="text-gray-200 relative">
-              <p className="text-base sm:text-lg font-medium pb-3">
-                2021 - 2023
-              </p>
+              <div className="flex justify-between items-center">
+                <p className="text-base sm:text-lg font-medium pb-3">
+                  2021 - 2023
+                </p>
+                <p className="text-xs sm:text-lg- font-extrabold pb-3 bg-gradient-to-r from-[#F1029A] to-[#3622AD] text-transparent bg-clip-text group-hover:text-[#201654]">
+                  COMPUTER SCIENCE{" "}
+                </p>
+              </div>
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
                 Delta State Polytechnic Ogwashi-uku{" "}
               </h2>
@@ -64,13 +75,11 @@ const eduction = () => {
               </div>
             </div>
             <div className="text-gray-200 relative">
-              <p className="text-base sm:text-lg font-medium pb-5">
-                2019
-              </p>
+              <p className="text-base sm:text-lg font-medium pb-5">2019</p>
               <h2 className="text-lg sm:text-xl md:text-2xl pt-5 font-bold">
                 New Hope Academy{" "}
               </h2>
-             <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transform duration-300 ">
+              <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transition-all duration-300 ">
                 WAEC
               </span>
             </div>

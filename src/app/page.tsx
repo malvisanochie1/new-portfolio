@@ -1,6 +1,3 @@
-// import Image from "next/image";
-// import { ModeToggle } from "@/components/dark-theme-toggle";
-// import { div } from "framer-motion/client";
 "use client";
 import Navbar from "@/components/navbar/navbar";
 // import SmoothScroll from "@/components/ui/smoothScroll";
@@ -13,13 +10,14 @@ import { HoverEffect } from "@/components/sections/portfolio";
 import { portfolioWorks } from "@/components/texts/content";
 import Contact from "@/components/sections/contact";
 import Education from "@/components/sections/eduction";
-
+import Skills from "@/components/sections/skills";
 export default function Home() {
   return (
     <div className="bg-default text-gray-300">
       <Navbar />
       <Homesec />
       <MyServices />
+      <Skills />
       <section className="relative" id="about">
         <motion.div
           initial={{ opacity: 0.5, y: 100 }}
@@ -48,6 +46,7 @@ export default function Home() {
           <About_me />
         </motion.div>
       </section>
+
       {/* End of About me */}
       <Education />
       <HoverEffect items={portfolioWorks} />

@@ -344,7 +344,7 @@ export default function Homesec() {
                   transition: { duration: 0.16 },
                 }}
               >
-                <p className="font-bold text-lg">130+</p>
+                <p className="font-bold text-lg">80+</p>
                 <p className="text-xs">Projects</p>
               </motion.div>
 

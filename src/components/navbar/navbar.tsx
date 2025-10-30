@@ -9,6 +9,7 @@ const navigationItems = [
   { name: "About", href: "#about" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "Service", href: "#service" },
+  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -54,7 +55,7 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
+              <div className="ml-10 flex items-baseline space-x-3 lg:space-x-6">
                 {navigationItems.map((item) => (
                   <a
                     key={item.name}

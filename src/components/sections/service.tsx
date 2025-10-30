@@ -142,7 +142,7 @@ export default function MyServices() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0.5, y: 65 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
@@ -198,7 +198,7 @@ export default function MyServices() {
                       className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors duration-300 group-hover:translate-x-1 transform inline-flex items-center gap-2"
                     >
                       Learn More
-                      <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      <span className="group-hover:translate-x-1 transition-all duration-300">
                         →
                       </span>
                     </Link>

@@ -119,10 +119,8 @@ export const portfolioWorks = [
         url: "https://www.figma.com/design/dtk0yVzXhUUm1nUj83Ovbe/Eriggo?node-id=14266-33902&t=AVvPDRu6fdzaGIer-0",
       },
       { label: "live", url: "https://www.eriggo.com/" },
-      { label: "github", url: "https://github.com/malvisanochie1/errigo" },
     ],
     liveUrl: "https://www.eriggo.com/",
-    githubUrl: "https://github.com/malvisanochie1/errigo",
   },
   {
     id: 2,
@@ -134,22 +132,26 @@ export const portfolioWorks = [
       { label: "live", url: "https://ridimit-exchange.vercel.app/" },
       {
         label: "github",
-        url: "https://github.com/malvisanochie1/Ridimit-Exchange.git",
       },
     ],
     liveUrl: "https://ridimit-exchange.vercel.app/",
-    githubUrl: "https://github.com/malvisanochie1/Ridimit-Exchange.git",
     category: "Plain HTML CSS and JS Exchange landing page",
   },
   {
     id: 3,
-    title: "Mobile Banking App",
+    title: "Responsive Trading site",
     description:
       "A trading site with lots of reuseable pages, built with Nextjs, typescript and Tailwind CSS for a fast, seamless user experience.",
     image: "/home/work3.jpg",
     links: [
-      { label: "live", url: "https://ebultrading.vercel.app/trading/buy_crypto" },
-      { label: "github", url: "https://github.com/malvisanochie1/ebultrading.git" },
+      {
+        label: "live",
+        url: "https://ebultrading.vercel.app/trading/buy_crypto",
+      },
+      {
+        label: "github",
+        url: "https://github.com/malvisanochie1/ebultrading.git",
+      },
     ],
     liveUrl: "https://ebultrading.vercel.app/trading/buy_crypto",
     githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
