@@ -173,4 +173,28 @@ export const portfolioWorks = [
     githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
     category: "Nextjs, Shadcn, and Tailwind",
   },
+  {
+    id: 5,
+    title: "A single site clone",
+    description:
+      "A client requested that I clone this single page site and add some light scroll animation exactly as seen and also make the last text before the footer to look exactly that way against the original design which I delivered the site I cloned will be linked to the 'clone' while the result will be in the 'live'",
+    image: "/home/work5.jpg",
+    links: [
+      { label: "live", url: "https://cryptogate-five.vercel.app/" },
+      {
+        label: "clone",
+        url: "https://dancing-croquembouche-036cfb.netlify.app/",
+      },
+    ],
+    liveUrl: "https://www.eriggo.com/",
+  },
+  {
+    id: 6,
+    title: "A single page blog site template",
+    description:
+      "A client wanted a quick single page site for his blog with no api connection just the responsive design and necessary animations which I delivered Please Note that this is just a template (skeleton) of the blog site no api connection yet",
+    image: "/home/work6.jpg",
+    links: [{ label: "live", url: "https://blogsite-kappa-indol.vercel.app/" }],
+    liveUrl: "https://blogsite-kappa-indol.vercel.app/",
+  },
 ];

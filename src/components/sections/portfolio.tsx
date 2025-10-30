@@ -32,7 +32,10 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className=" px-2 md:px-10  lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
+    <div
+      className=" px-2 md:px-10  lg:px-8 py-12 md:py-20 max-w-6xl mx-auto"
+      id="portfolio"
+    >
       {/* Header */}
       <motion.h1
         initial={{ opacity: 0.5, y: 65 }}
@@ -85,7 +88,6 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
-                
                 <motion.span
                   className="absolute inset-0 h-full w-full bg-slate-700 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"
