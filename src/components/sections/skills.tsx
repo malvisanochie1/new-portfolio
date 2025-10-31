@@ -110,7 +110,7 @@ export default function SkillsSection() {
               </div>
               <h2 className="text-white text-2xl font-bold">My Skills</h2>
             </div>
-            <p className="text-muted-foreground text-base md:text-lg max-w-2xl">
+            <p className="text-gray-400 text-sm max-w-2xl">
               A comprehensive overview of my technical expertise, organized by
               category. I&apos;m constantly learning and expanding my skillset
               to stay current with modern web development practices.
