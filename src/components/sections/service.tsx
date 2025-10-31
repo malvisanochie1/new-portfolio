@@ -36,7 +36,7 @@ export const services = [
     ),
   },
   {
-    title: "Responsive Website Development",
+    title: "Responsive Frontend Development",
     description:
       "I build fully responsive websites that adapt seamlessly across mobile, tablet, and desktop using HTML, CSS, and JavaScript.",
     gradient: "from-emerald-600 to-teal-600",
@@ -102,7 +102,7 @@ export const services = [
     ),
   },
   {
-    title: "Frontend Bug Fixing & UI Optimization",
+    title: "UI Bug Fixing & Performance Enhancement",
     description:
       "I identify and fix layout, styling, or rendering issues to enhance responsiveness and performance.",
     gradient: "from-rose-600 to-fuchsia-600",
@@ -159,9 +159,10 @@ export default function MyServices() {
               <h2 className="text-white text-2xl font-bold">My Services</h2>
             </div>
             <p className="text-gray-400 text-sm max-w-2xl">
-              I am a skilled web developer with expertise in creating innovative
-              and user-friendly websites. My passion for coding and my attention
-              to detail allow me to create custom solutions.
+              I am a Frontend UI Developer specializing in building clean,
+              responsive, and visually appealing user interfaces with React,
+              Next.js, and modern UI frameworks. I turn design concepts into
+              pixel-perfect, high-performance digital experiences.
             </p>
           </div>
         </motion.h1>
