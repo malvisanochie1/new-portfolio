@@ -289,7 +289,9 @@ export default function Homesec() {
                     className="rounded-md"
                   >
                     <Link
-                      href="#download"
+                      href="/resume/NWAKONOBI_CHISOM_MALVIS-resume.pdf"
+                      download
+                      target="blank"
                       className="relative border-2 border-[#9933ff] text-white px-4 md:px-4 py-3 rounded-md hover:bg-[#9933ff]/10 transition-all duration-300 font-semibold text-base md:text-lg group overflow-hidden "
                     >
                       <span className="relative z-10">Download CV</span>
