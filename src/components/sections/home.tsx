@@ -17,7 +17,6 @@ export default function Homesec() {
     visible: {
       opacity: 1,
       transition: {
-        // shorter entrance and lighter stagger for snappier load
         duration: 0.4,
         staggerChildren: 0.12,
       },
@@ -93,7 +92,6 @@ export default function Homesec() {
       },
     },
   };
-  // Removed JS infinite loops for pulse/floating animations and replaced with CSS keyframes below
 
   const badgeVariants = {
     hidden: { opacity: 0, scale: 0 },
@@ -140,7 +138,6 @@ export default function Homesec() {
       },
     },
   };
-  // floatingVariants removed: replaced by CSS keyframes for better runtime performance
   const glowVariants = {
     hover: {
       boxShadow: [
@@ -456,5 +453,3 @@ export default function Homesec() {
     </motion.div>
   );
 }
-
-// Animations moved to global stylesheet: src/app/globals.css (utilities layer)
