@@ -1,11 +1,9 @@
 "use client";
 import Navbar from "@/components/navbar/navbar";
-// import SmoothScroll from "@/components/ui/smoothScroll";
 import Homesec from "@/components/sections/home";
 import MyServices from "@/components/sections/service";
 import About_me from "@/components/sections/about_me";
 import { motion } from "framer-motion";
-// import PortfolioCards from "@/components/sections/portfolio";
 import { HoverEffect } from "@/components/sections/portfolio";
 import { portfolioWorks } from "@/components/texts/content";
 import Contact from "@/components/sections/contact";
