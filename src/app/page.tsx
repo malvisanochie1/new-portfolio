@@ -44,8 +44,6 @@ export default function Home() {
           <About_me />
         </motion.div>
       </section>
-
-      {/* End of About me */}
       <Education />
       <HoverEffect items={portfolioWorks} />
       <Contact />

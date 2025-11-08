@@ -8,7 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const FORM_ENDPOINT = "https://formspree.io/f/xnngbyrk"; // <- replace
+  const FORM_ENDPOINT = "https://formspree.io/f/xnngbyrk"; 
   const STORAGE_KEY = "portfolio_form_submissions";
   const LIMIT = 3;
 
