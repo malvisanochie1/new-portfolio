@@ -5,6 +5,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 export default function useGsapSmoother() {
   useEffect(() => {
     if (typeof window === "undefined") return;
+    // Temporarily disabled for performance. Native smooth scroll + CSS is sufficient.
+    if (window.innerWidth < 1024) return;
 
     (async () => {
       const ScrollSmoother = (await import("gsap/ScrollSmoother")).default;

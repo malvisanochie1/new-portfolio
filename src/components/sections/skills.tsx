@@ -97,6 +97,7 @@ export default function SkillsSection() {
         <motion.h1
           initial={{ opacity: 0.5, y: 65 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{
             delay: 0.3,
             duration: 0.8,

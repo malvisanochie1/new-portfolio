@@ -7,11 +7,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { LiaFacebookF } from "react-icons/lia";
 import { motion } from "framer-motion";
-import useGsapSmoother from "../ui/hooks/useGsapSmoother";
 
 export default function Homesec() {
-  useGsapSmoother();
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -138,30 +135,6 @@ export default function Homesec() {
       },
     },
   };
-  const glowVariants = {
-    hover: {
-      boxShadow: [
-        "0 0 0 rgba(255, 51, 102, 0)",
-        "0 0 20px rgba(255, 51, 102, 0.4)",
-        "0 0 40px rgba(255, 51, 102, 0.2)",
-      ],
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
-  const secondaryGlowVariants = {
-    hover: {
-      boxShadow: [
-        "0 0 0 rgba(153, 51, 255, 0)",
-        "0 0 20px rgba(153, 51, 255, 0.4)",
-        "0 0 40px rgba(153, 51, 255, 0.2)",
-      ],
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
   return (
     <motion.div
       id="home"
@@ -174,7 +147,7 @@ export default function Homesec() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Content */}
           <motion.div
-            className="lg:w-1/2 space-y-6"
+            className="lg:w-1/2 space-y-6 max-w-2xl"
             variants={leftContentVariants}
           >
             <motion.p
@@ -193,36 +166,23 @@ export default function Homesec() {
 
             <motion.h1
               className="text-4xl md:text-5xl font-bold leading-tight"
-              variants={textVariants}
+              variants={textVariants} 
             >
-              Maximize Your Business{" "}
-              <motion.span
-                className="text-[#ff3366] block md:inline"
-                animate={{
-                  textShadow: [
-                    "0 0 0px #ff3366",
-                    "0 0 10px #ff3366",
-                    "0 0 0px #ff3366",
-                  ],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "easeInOut",
-                }}
-              >
-                Potential
-              </motion.span>{" "}
-              <span className="block md:inline">with Custom Web</span>
+              Frontend Engineer
+              <br className="hidden md:flex"/>
+              <span className="text-[#ff3366] block md:inline text-glow-anim pl-2">
+                Building Modern
+              </span>{" "}
+              <span className="block md:inline">Web Applications</span>
             </motion.h1>
 
             <motion.h2
               className="text-3xl md:text-4xl font-bold"
               variants={textVariants}
             >
-              Development{" "}
+              That Users{" "}
               <span className="bg-gradient-to-r from-[#ff3366] to-[#9933ff] bg-clip-text text-transparent">
-                Solutions!
+                Love!
               </span>
             </motion.h2>
 
@@ -250,25 +210,19 @@ export default function Homesec() {
               >
                 {/* floating handled by CSS (GPU friendly) */}
                 <div className="float-css">
-                  <motion.div
-                    variants={glowVariants}
-                    whileHover="hover"
-                    className="rounded-md"
+                  <Link
+                    href="#contact"
+                    className="bg-gradient-to-r from-[#ff3366] to-[#e62e5c] hover:from-[#e62e5c] hover:to-[#ff3366] text-white px-4 md:px-4 py-3 md:py-3 rounded-md flex items-center gap-2 md:gap-3 transition-all duration-300 font-semibold text-base md:text-lg shadow-lg hover:shadow-[0_0_20px_rgba(255,51,102,0.4)] relative overflow-hidden group"
                   >
-                    <Link
-                      href="#contact"
-                      className="bg-gradient-to-r from-[#ff3366] to-[#e62e5c] hover:from-[#e62e5c] hover:to-[#ff3366] text-white px-4 md:px-4 py-3 md:py-3 rounded-md flex items-center gap-2 md:gap-3 transition-all duration-300 font-semibold text-base md:text-lg shadow-lg relative overflow-hidden group"
-                    >
-                      <span className="relative z-10">Get in Touch</span>
-                      {/* arrow micro-motion via CSS */}
-                      <span className="relative z-10 arrow-anim" aria-hidden>
-                        →
-                      </span>
+                    <span className="relative z-10">Get in Touch</span>
+                    {/* arrow micro-motion via CSS */}
+                    <span className="relative z-10 arrow-anim" aria-hidden>
+                      →
+                    </span>
 
-                      {/* overlay animated using CSS transform on group-hover */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out" />
-                    </Link>
-                  </motion.div>
+                    {/* overlay animated using CSS transform on group-hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out" />
+                  </Link>
                 </div>
               </motion.div>
 
@@ -280,25 +234,17 @@ export default function Homesec() {
                 className="relative"
               >
                 <div className="float-css" style={{ animationDelay: "0.9s" }}>
-                  <motion.div
-                    variants={secondaryGlowVariants}
-                    whileHover="hover"
-                    className="rounded-md"
+                  <Link
+                    href="/resume/NWAKONOBI_CHISOM_MALVIS-resume.pdf"
+                    download
+                    target="blank"
+                    className="relative border-2 border-[#9933ff] text-white px-4 md:px-4 py-3 rounded-md hover:bg-[#9933ff]/10 hover:shadow-[0_0_20px_rgba(153,51,255,0.4)] transition-all duration-300 font-semibold text-base md:text-lg group overflow-hidden"
                   >
-                    <Link
-                      href="/resume/NWAKONOBI_CHISOM_MALVIS-resume.pdf"
-                      download
-                      target="blank"
-                      className="relative border-2 border-[#9933ff] text-white px-4 md:px-4 py-3 rounded-md hover:bg-[#9933ff]/10 transition-all duration-300 font-semibold text-base md:text-lg group overflow-hidden "
-                    >
-                      <span className="relative z-10">Download CV</span>
+                    <span className="relative z-10">Download CV</span>
 
-                      {/* Animated border via CSS background animation */}
-                      <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-[#9933ff] via-[#ff3366] to-[#9933ff] rounded-md bg-pos-anim" />
-
-                      {/* Inner content background */}
-                    </Link>
-                  </motion.div>
+                    {/* Animated border via CSS background animation */}
+                    <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-[#9933ff] via-[#ff3366] to-[#9933ff] rounded-md bg-pos-anim" />
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>
@@ -310,16 +256,15 @@ export default function Homesec() {
             variants={rightContentVariants}
           >
             <div className="relative">
-              {/* Purple gradient circle background */}
+              {/* Optimized: CSS pulse (pulse-css) instead of Framer Motion infinite animate */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#9933ff]/80 to-[#ff3366]/80 rounded-full blur-2xl opacity-30 pulse-css" />
 
               {/* Main image with circular crop */}
               <motion.div
-                className="relative z-10 rounded-full overflow-hidden border-4 border-[#9933ff]/20 w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+                className="relative z-10 rounded-full overflow-hidden border-4 border-[#9933ff]/20 hover:border-[#9933ff]/50 transition-colors duration-300 w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
                 variants={imageVariants}
                 whileHover={{
                   scale: 1.05,
-                  borderColor: "rgba(153, 51, 255, 0.5)",
                   transition: { duration: 0.3 },
                 }}
               >
@@ -328,12 +273,13 @@ export default function Homesec() {
                   alt="Web Developer"
                   width={400}
                   height={400}
+                  priority
                   className="object-cover- object-bottom"
                 />
                 <div className="absolute top-0 w-full h-full rounded-full bg-black/20"></div>
               </motion.div>
 
-              {/* Stats badges */}
+              {/* Stats badges — Optimized: continuous float via CSS bob-css; whileHover kept for interaction */}
               <motion.div
                 className="absolute top-5 right-0 bg-white text-black rounded-full py-2 px-4 shadow-lg z-20 bob-css"
                 variants={badgeVariants}

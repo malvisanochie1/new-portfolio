@@ -7,29 +7,6 @@ import Link from "next/link";
 import AboutMeImg from "../../../public/home/Developer2.jpg";
 export default function About_me() {
   const [isHovered, setIsHovered] = useState(false);
-  const secondaryGlowVariants = {
-    hover: {
-      boxShadow: [
-        "0 0 0 rgba(153, 51, 255, 0)",
-        "0 0 20px rgba(153, 51, 255, 0.4)",
-        "0 0 40px rgba(153, 51, 255, 0.2)",
-      ],
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
-  const floatingVariants = {
-    animate: {
-      y: [0, -8, 0],
-      transition: {
-        duration: 3,
-        repeat: Number.POSITIVE_INFINITY,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -101,30 +78,32 @@ export default function About_me() {
 
               <h2 className="text-white text-2xl md:text-3xl font-bold mb-3">
                 <span className="text_gradient my-2">
-                  A Frontend UI Developer
+                  A Frontend Developer
                 </span>
               </h2>
+
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                I specialize in building clean, responsive, and visually
-                polished web interfaces using React, Next.js, and Tailwind CSS.
-                I turn Figma designs into pixel-perfect, interactive frontends
-                with smooth animations, scalable components, and modern UI
-                practices.
+                I'm a Frontend Engineer with 4 years of hands-on experience
+                building modern, responsive, and scalable web applications. I
+                specialize in React, Next.js, TypeScript, and Tailwind CSS,
+                transforming ideas and designs into production-ready user
+                experiences that are fast, accessible, and maintainable.
                 <br />
-                I value clarity, performance, and a professional design finish —
-                ensuring every layout is consistent, well-structured, and
-                user-friendly across devices.
-                <br />
-                <br />
-                I&apos;updatedm constantly improving my skills in API
-                integration, state management, and full-stack fundamentals to
-                build even more dynamic and production-ready web apps.
+                Throughout my career, I've collaborated with companies and
+                clients to develop landing pages, dashboards, business
+                platforms, and reusable component systems with a strong focus on
+                clean architecture, performance, and code quality.
                 <br />
                 <br />
-                Whether it’s a landing page, dashboard, or multi-page platform,
-                I bring a strong design eye, modern development workflow, and a
-                commitment to delivering clean, high-quality code and
-                interfaces.
+                My experience includes REST API integration, responsive UI
+                development, performance optimization, component-driven
+                architecture, and modern Git-based development workflows. I'm
+                also expanding my backend knowledge by learning Node.js,
+                Express.js, and full-stack application development.
+                <br />
+                <br />I enjoy solving real product problems, writing
+                maintainable code, and building software that delivers
+                meaningful value to users and businesses.
               </p>
 
               <div className="inline w-fit mt-5">
@@ -132,45 +111,19 @@ export default function About_me() {
                   variants={buttonVariants}
                   whileHover="hover"
                   whileTap="tap"
-                  animate="animate"
                   className="relative"
                 >
-                  <motion.div
-                    variants={floatingVariants}
-                    animate="animate"
-                    style={{ animationDelay: "1s" }}
-                  >
-                    <motion.div
-                      variants={secondaryGlowVariants}
-                      whileHover="hover"
-                      className="rounded-md"
+                  <div className="float-css" style={{ animationDelay: "1s" }}>
+                    <Link
+                      href="#contact"
+                      className="relative border-2 border-[#9933ff] text-white px-4 md:px-4 py-3 rounded-md hover:bg-[#9933ff]/10 hover:shadow-[0_0_20px_rgba(153,51,255,0.4)] transition-all duration-300 font-semibold text-base md:text-lg group overflow-hidden"
                     >
-                      <Link
-                        href="#contact"
-                        className="relative border-2 border-[#9933ff] text-white px-4 md:px-4 py-3 rounded-md hover:bg-[#9933ff]/10 transition-all duration-300 font-semibold text-base md:text-lg group overflow-hidden"
-                      >
-                        <span className="relative z-10">Contact Me</span>
+                      <span className="relative z-10">Contact Me</span>
 
-                        {/* Animated border */}
-                        <motion.div
-                          className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-[#9933ff] via-[#ff3366] to-[#9933ff] rounded-md"
-                          style={{
-                            backgroundSize: "200% 100%",
-                          }}
-                          animate={{
-                            backgroundPosition: ["0% 0%", "200% 0%"],
-                          }}
-                          transition={{
-                            duration: 3,
-                            repeat: Number.POSITIVE_INFINITY,
-                            ease: "linear",
-                          }}
-                        />
-
-                        {/* Inner content background */}
-                      </Link>
-                    </motion.div>
-                  </motion.div>
+                      {/* Animated border via CSS background animation */}
+                      <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-[#9933ff] via-[#ff3366] to-[#9933ff] rounded-md bg-pos-anim" />
+                    </Link>
+                  </div>
                 </motion.div>
               </div>
             </div>

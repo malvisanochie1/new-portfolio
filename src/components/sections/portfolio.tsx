@@ -40,6 +40,7 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
       <motion.h1
         initial={{ opacity: 0.5, y: 65 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{
           delay: 0.3,
           duration: 0.8,
@@ -106,14 +107,15 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
 
             <Card className="border border-slate-700">
               {item.liveUrl ? (
-                <Link href={item.liveUrl} target="_blank">
+                <Link href={item.liveUrl} target="_blank" prefetch={false}>
                   <Image
                     src={item.image}
                     alt={item.title}
                     className="rounded-lg mb-4 w-full h-40 object-cover"
                     width={400}
                     height={160}
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    loading="lazy"
                   />
                 </Link>
               ) : (
@@ -123,7 +125,8 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
                   className="rounded-lg mb-4 w-full h-40 object-cover"
                   width={400}
                   height={160}
-                  unoptimized
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  loading="lazy"
                 />
               )}
 

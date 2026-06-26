@@ -1,17 +1,25 @@
 "use client";
+import dynamic from "next/dynamic";
 import Navbar from "@/components/navbar/navbar";
 import Homesec from "@/components/sections/home";
-import MyServices from "@/components/sections/service";
-import About_me from "@/components/sections/about_me";
+import BottomNav from "@/components/ui/bottom-nav";
 import { motion } from "framer-motion";
-import { HoverEffect } from "@/components/sections/portfolio";
 import { portfolioWorks } from "@/components/texts/content";
-import Contact from "@/components/sections/contact";
-import Education from "@/components/sections/eduction";
-import Skills from "@/components/sections/skills";
+
+const MyServices = dynamic(() => import("@/components/sections/service"), { ssr: false });
+const Skills = dynamic(() => import("@/components/sections/skills"), { ssr: false });
+const About_me = dynamic(() => import("@/components/sections/about_me"), { ssr: false });
+const Education = dynamic(() => import("@/components/sections/eduction"), { ssr: false });
+const HoverEffect = dynamic(
+  () => import("@/components/sections/portfolio").then((m) => m.HoverEffect),
+  { ssr: false }
+);
+const Contact = dynamic(() => import("@/components/sections/contact"), { ssr: false });
+
 export default function Home() {
   return (
-    <div className="bg-default text-gray-300">
+    /* pb-24 on mobile so content isn't hidden behind the fixed bottom nav */
+    <div className="bg-default text-gray-300 pb-24 md:pb-0">
       <Navbar />
       <Homesec />
       <MyServices />
@@ -20,6 +28,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -47,6 +56,7 @@ export default function Home() {
       <Education />
       <HoverEffect items={portfolioWorks} />
       <Contact />
+      <BottomNav />
     </div>
   );
 }

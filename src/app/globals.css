@@ -123,6 +123,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* offset for sticky navbar on anchor scroll */
+  }
 }
 
 .hover_gradient {
@@ -229,6 +233,19 @@
     }
   }
 
+  /* text glow pulse for the hero "Potential" word */
+  @keyframes textGlow {
+    0%, 100% {
+      text-shadow: 0 0 0px #ff3366;
+    }
+    50% {
+      text-shadow: 0 0 10px #ff3366;
+    }
+  }
+  .text-glow-anim {
+    animation: textGlow 2s ease-in-out infinite;
+  }
+
   /* small arrow nudge */
   @keyframes arrowX {
     0% {
@@ -267,6 +284,7 @@
   .arrow-anim {
     display: inline-block;
     animation: arrowX 1.2s ease-in-out infinite;
+    will-change: transform;
   }
   .bg-pos-anim {
     background-size: 200% 100%;

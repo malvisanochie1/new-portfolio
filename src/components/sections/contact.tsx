@@ -8,7 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const FORM_ENDPOINT = "https://formspree.io/f/xnngbyrk"; 
+  const FORM_ENDPOINT = "https://formspree.io/f/xnngbyrk";
   const STORAGE_KEY = "portfolio_form_submissions";
   const LIMIT = 3;
 
@@ -56,7 +56,7 @@ export default function Contact() {
       const newCount = count + 1;
       localStorage.setItem(
         STORAGE_KEY,
-        JSON.stringify({ count: newCount, lastSaved: Date.now() })
+        JSON.stringify({ count: newCount, lastSaved: Date.now() }),
       );
       setCount(newCount);
       setForm({ name: "", email: "", company: "", interest: "", message: "" });
@@ -81,11 +81,11 @@ export default function Contact() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => setForm({ ...form, [e.target.name]: e.target.value });
 
   return (
-    <div className="h-full w-full bg-[#0a0a16] mb-10" id="contact">
+    <div className="h-full w-full bg-[#0a0a16] " id="contact">
       <div className="h-full rounded-2xl relative overflow-hidden  mx-auto md:max-w-[93%]">
         <Image
           fill
@@ -177,8 +177,8 @@ export default function Contact() {
                         {mutation.status === "pending"
                           ? "Sending..."
                           : count >= LIMIT
-                          ? "Limit Reached"
-                          : "Send Message"}
+                            ? "Limit Reached"
+                            : "Send Message"}
                       </button>
                       <Link
                         href="https://wa.me/+2348121437432?text=Hello%20Malvis%20👋%0AComing%20from%20your%20Portfolio"
