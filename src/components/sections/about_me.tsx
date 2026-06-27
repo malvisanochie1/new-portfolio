@@ -83,13 +83,13 @@ export default function About_me() {
               </h2>
 
               <p className="text-gray-400 text-sm leading-relaxed mb-6 text-justify">
-                I'm a Frontend Engineer with 4 years of hands-on experience
+                I&apos;m a Frontend Engineer with 4 years of hands-on experience
                 building modern, responsive, and scalable web applications. I
                 specialize in React, Next.js, TypeScript, and Tailwind CSS,
                 transforming ideas and designs into production-ready user
                 experiences that are fast, accessible, and maintainable.
                 <br />
-                Throughout my career, I've collaborated with companies and
+                Throughout my career, I&apos;ve collaborated with companies and
                 clients to develop landing pages, dashboards, business
                 platforms, and reusable component systems with a strong focus on
                 clean architecture, performance, and code quality.
@@ -97,7 +97,7 @@ export default function About_me() {
                 <br />
                 My experience includes REST API integration, responsive UI
                 development, performance optimization, component-driven
-                architecture, and modern Git-based development workflows. I'm
+                architecture, and modern Git-based development workflows. I&apos;m
                 also expanding my backend knowledge by learning Node.js,
                 Express.js, and full-stack application development.
                 <br />

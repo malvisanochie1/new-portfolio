@@ -203,13 +203,14 @@ export default function Contact() {
           <div className="hidden lg:flex flex-col mx-auto bg-blue-700 h-full mt-20 max-w-96 max-w-80- md:w-1/2 w-full rounded-3xl py-12 md:py-16 text-white">
             <div className="px-8 md:px-14">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
-                Let's Build Something Great Together <br />
+                Let&apos;s Build Something Great Together <br />
               </h1>
             </div>
             <hr className="my-4 md:my-6 border-cyan-600" />{" "}
             <div className="px-8 md:px-14">
               <p className="text-lg sm:text-xl ">
-                Thanks for reaching out! I'll review your message and get back to you <br /> as soon as possible. 
+                Thanks for reaching out! I&apos;ll review your message and get
+                back to you <br /> as soon as possible.
               </p>
             </div>
           </div>
