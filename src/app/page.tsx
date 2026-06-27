@@ -19,7 +19,7 @@ const Contact = dynamic(() => import("@/components/sections/contact"), { ssr: fa
 export default function Home() {
   return (
     /* pb-24 on mobile so content isn't hidden behind the fixed bottom nav */
-    <div className="bg-default text-gray-300 pb-24 md:pb-0">
+    <div className="bg-default text-gray-300 pb-24- md:pb-0">
       <Navbar />
       <Homesec />
       <MyServices />

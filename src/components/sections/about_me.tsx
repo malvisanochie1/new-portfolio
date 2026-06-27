@@ -30,8 +30,8 @@ export default function About_me() {
   };
 
   return (
-    <section className="relative bg-gray-800/50 py-16 px-4 flex justify-center items-center min-h-[300px]">
-      <div className=" lg:px-8 py-12 md:py-20 max-w-6xl mx-auto">
+    <section className="relative bg-gray-800/50 pt-6 pb-5 px-4 flex justify-center items-center min-h-[300px]">
+      <div className=" lg:px-8 py-12 md:py-16 max-w-6xl mx-auto">
         <div
           className="max-w-6xl w-full bg-gradient-to-r from-pink-500 to-purple-600 p-[1px] rounded-lg overflow-hidden md:max-h-96-"
           onMouseEnter={() => setIsHovered(true)}

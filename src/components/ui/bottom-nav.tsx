@@ -69,9 +69,9 @@ export default function BottomNav() {
     /* Mobile only — hidden on md and above */
     <nav
       aria-label="Bottom navigation"
-      className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 md:hidden"
+      className="fixed bottom-0 sm:bottom-4 left-1/2 -translate-x-1/2 z-40 md:hidden w-full sm:px-2 "
     >
-      <div className="flex items-center justify-between gap-1 bg-gray-900/35 backdrop-blur-sm border border-gray-800 rounded-full px-2 py-2 shadow-2xl shadow-black/50 !w-full max-w-xl ">
+      <div className="flex items-center justify-between gap-1 bg-gray-900/35 backdrop-blur-sm border border-gray-800 sm:rounded-full px-2 py-2 shadow-2xl shadow-black/50 !w-full sm:max-w-lg mx-auto">
         {tabs.map(({ name, href, icon: Icon }) => {
           const active = activeSection === href;
           return (
@@ -80,14 +80,14 @@ export default function BottomNav() {
               href={href}
               onClick={(e) => handleClick(e, href)}
               aria-current={active ? "page" : undefined}
-              className={`flex flex-col items-center justify-center gap-0.5 px-4 sm:px-6 py-2 rounded-full transition-all duration-200  select-none ${
+              className={`flex flex-col items-center justify-center gap-0.5 px-4 sm:px-6 py-2 rounded-full transition-all duration-200  select-none font-bold ${
                 active
                   ? "text-white shadow-sm shadow-pink-500/50 bg-slate-900/50"
-                  : "text-gray-400 hover:text-gray-200 active:scale-95"
+                  : "text-gray-200 hover:text-gray-200 active:scale-95"
               }`}
             >
               <Icon
-                className={`w-5 h-5 ${active ? "text-pink-500/70" : "text-white"}`}
+                className={`w-5 h-5 font-bold ${active ? "text-pink-500/70" : "text-white"}`}
                 strokeWidth={active ? 2.5  : 1.8}
               />
               <span className="text-[10px] font-semibold leading-none tracking-wide">

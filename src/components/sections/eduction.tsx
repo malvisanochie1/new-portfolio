@@ -2,7 +2,7 @@ import React from "react";
 
 const eduction = () => {
   return (
-    <div className="py-10 mt-10 md:mt-20 lg:mt-32 px-3 md:px-10">
+    <div className="py-10 mt-7 md:mt-10 lg:mt-12 px-3 md:px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 max-w-6xl mx-auto">
         <div className="mt-4 rounded-2xl py-10 px-4 bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none w-full group transition-all duration-700 ease-in-out">
           <div className="flex items-center gap-4 h-full">
@@ -26,10 +26,10 @@ const eduction = () => {
               </div>
 
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                Delta State Polytechnic Ogwashi-uku{" "}
+                Higher National Diploma in Software & Web Development{" "}
               </h2>
               <span className="bg-white px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transform duration-300 ">
-                Higher National Diploma
+                State Polytechnic
               </span>
             </div>
           </div>
@@ -55,7 +55,7 @@ const eduction = () => {
                 </p>
               </div>
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                Delta State Polytechnic Ogwashi-uku{" "}
+                Ordinary National Diploma in Computer Science{" "}
               </h2>
               <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transform duration-300 ">
                 National Diploma
@@ -77,7 +77,7 @@ const eduction = () => {
             <div className="text-gray-200 relative">
               <p className="text-base sm:text-lg font-medium pb-5">2019</p>
               <h2 className="text-lg sm:text-xl md:text-2xl pt-5 font-bold">
-                New Hope Academy{" "}
+              Secondary School Education{" "}
               </h2>
               <span className="bg-white bg-gradient-to-r from-[#F1029A] to-[#3622AD] group-hover:bg-none group-hover:bg-white  px-4 py-2 rounded-md absolute -bottom-14 h-10 ms-4 text-slate-800 font-bold inset-shadow-sm inset-shadow-gray-400 ease-in-out transition-all duration-300 ">
                 WAEC

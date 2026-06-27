@@ -81,7 +81,14 @@ const skillCategories: SkillCategory[] = [
     id: "learning",
     title: "Expanding Expertise",
     description: "Expanding my skillset",
-    skills: ["API integration", "Backend basics", "CRUD Operations", "Backend Fundamentals", "Node.js", "Express.js"],
+    skills: [
+      "API integration",
+      "Backend basics",
+      "CRUD Operations",
+      "Backend Fundamentals",
+      "Node.js",
+      "Express.js",
+    ],
     icon: <FaRocket size={20} className="text-gray-100" />,
     isLearning: true,
   },
@@ -181,7 +188,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Footer Note */}
-        <div className="mt-12 md:mt-16 p-6 rounded-lg border border-purple-400/50  @apply bg-gradient-to-r from-[#F1029A]/10 to-[#3622AD]/10">
+        <div className="mt-12 mb-5 md:mt-16 md:mb-5 p-6 rounded-lg border border-purple-400/50  @apply bg-gradient-to-r from-[#F1029A]/10 to-[#3622AD]/10">
           <p className="text-sm md:text-base text-muted-foreground">
             <span className="text-[#F1029A] font-semibold">Pro Tip:</span>{" "}
             I&apos;m always open to learning new technologies and frameworks. If
