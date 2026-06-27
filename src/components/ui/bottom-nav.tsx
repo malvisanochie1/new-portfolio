@@ -71,7 +71,7 @@ export default function BottomNav() {
       aria-label="Bottom navigation"
       className="fixed bottom-0 sm:bottom-4 left-1/2 -translate-x-1/2 z-40 md:hidden w-full sm:px-2 "
     >
-      <div className="flex items-center justify-between gap-1 bg-gray-900/35 backdrop-blur-sm border border-gray-800 sm:rounded-full px-2 py-2 shadow-2xl shadow-black/50 !w-full sm:max-w-lg mx-auto">
+      <div className="flex items-center justify-between gap-1 bg-gray-900/35 backdrop-blur-sm border border-t sm:border-x sm:border-gray-800 border-gray-900/80 sm:rounded-full px-2 py-2 shadow-2xl shadow-black/50 !w-full sm:max-w-lg mx-auto">
         {tabs.map(({ name, href, icon: Icon }) => {
           const active = activeSection === href;
           return (
