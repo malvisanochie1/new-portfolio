@@ -153,7 +153,7 @@ export default function SkillsSection() {
                     </div>
                     {category.isLearning && (
                       <Badge className="bg-chart-2/20 text-chart-2 border-chart-2/30">
-                        Learning
+                        Currently Expanding
                       </Badge>
                     )}
                   </div>

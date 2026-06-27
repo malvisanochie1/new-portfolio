@@ -97,8 +97,10 @@ export default function About_me() {
                 My experience includes REST API integration, responsive UI
                 development, performance optimization, component-driven
                 architecture, and modern Git-based development workflows.
-                I&apos;m also expanding my backend knowledge by learning
-                Node.js, Express.js, and full-stack application development.
+                I&apos;m currently expanding my backend engineering knowledge
+                with Node.js and Express.js, enabling me to collaborate more
+                effectively across the full stack while continuing to specialize
+                in frontend engineering.
                 <br />
                 <br />I enjoy solving real product problems, writing
                 maintainable code, and building software that delivers

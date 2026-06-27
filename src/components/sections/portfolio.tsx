@@ -11,6 +11,8 @@ import Link from "next/link";
 export interface Project {
   id: number;
   title: string;
+  subtitle?: string;
+  badge?: string;
   description: string;
   image: string;
   technologies?: string[];
@@ -58,20 +60,18 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             <h2 className="text-white text-2xl font-bold">My Portfolio</h2>
           </div>
           <p className="text-gray-400 text-sm max-w-2xl">
-          These projects represent real-world applications, client work, and personal builds that demonstrate my approach to frontend engineering. They showcase responsive design, reusable component architecture, API integration, performance optimization, and modern development practices using React, Next.js, TypeScript, and Tailwind CSS.
-            <br />
-            <br />
-            This collection showcases my work across different areas, from
-            landing pages and dashboards to reusable UI components and
-            responsive layouts. Each project reflects my growth as a frontend
-            developer and my ongoing transition into full-stack functionality
+            These projects highlight my frontend engineering experience across
+            real-world client work and personal products, focusing on responsive
+            interfaces, reusable architecture, API integration, accessibility,
+            and performance optimization using React, Next.js, TypeScript, and
+            Tailwind CSS.
           </p>
         </div>
       </motion.h1>
       <div
         className={cn(
           "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
-          className
+          className,
         )}
       >
         {items.map((item, idx) => (
@@ -127,8 +127,30 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
                 />
               )}
 
+              {item.badge && (
+                <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-1">
+                  {item.badge}
+                </span>
+              )}
               <CardTitle>{item.title}</CardTitle>
+              {item.subtitle && (
+                <p className="text-xs text-zinc-500 mt-1 font-medium tracking-wide">
+                  {item.subtitle}
+                </p>
+              )}
               <CardDescription>{item.description}</CardDescription>
+              {item.technologies && item.technologies.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {item.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="text-xs px-2 py-0.5 rounded-full bg-zinc-800/80 text-zinc-400 border border-zinc-700/50"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-zinc-400">
                 {item.links?.map((link, index) =>
                   link?.url ? (
@@ -141,13 +163,39 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
                     >
                       {link.label}
                     </Link>
-                  ) : null
+                  ) : null,
                 )}
               </div>
             </Card>
           </div>
         ))}
       </div>
+
+      {/* GitHub CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+        className="mt-16 text-center px-4"
+      >
+        <h3 className="text-white text-lg font-semibold mb-2">
+          Want to see more?
+        </h3>
+        <p className="text-gray-400 text-sm max-w-xl mx-auto mb-6">
+          These featured projects represent my strongest work. Visit my GitHub
+          to explore additional client work, experiments, and ongoing frontend
+          development.
+        </p>
+        <Link
+          href="https://github.com/malvisanochie1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-800 border border-zinc-700 text-white text-sm hover:bg-zinc-700 transition-colors duration-200"
+        >
+          View More Projects on GitHub →
+        </Link>
+      </motion.div>
     </div>
   );
 };
@@ -160,8 +208,8 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({ className, children }) => (
   <div
     className={cn(
-      "rounded-2xl h-full w-full overflow-hidden bg-default border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-      className
+      "rounded-2xl h-full w-full overflow-hidden bg-default backdrop-blur-md border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+      className,
     )}
   >
     <div className="relative z-50 p-4">{children}</div>
@@ -181,7 +229,7 @@ export const CardDescription: React.FC<CardProps> = ({
   <p
     className={cn(
       "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
-      className
+      className,
     )}
   >
     {children}

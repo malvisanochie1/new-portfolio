@@ -109,92 +109,58 @@ export const services = [
 export const portfolioWorks = [
   {
     id: 1,
-    title: "A Food landing page",
+    title: "CareSync",
+    badge: "🚧 Active Development",
     description:
-      "figma to nextjs Modern food delivery web app for healthy, delicious meals. Built with Next.js and Tailwind CSS for a fast, seamless user experience.",
-    image: "/home/work1.jpg",
+      "Accessibility-First Healthcare Coordination Platform designed for Personal Support Workers (PSWs), healthcare administrators, patients, and families. Built with REST API integration, CRUD operations, customizable accessibility preferences, and scalable frontend architecture.",
+    image: "/home/portfolio.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "REST API", "CRUD"],
     links: [
+      { label: "Live", url: "https://caresync-six.vercel.app/" },
+      { label: "GitHub", url: "https://github.com/malvisanochie1/caresync" },
       {
-        label: "figma",
-        url: "https://www.figma.com/design/dtk0yVzXhUUm1nUj83Ovbe/Eriggo?node-id=14266-33902&t=AVvPDRu6fdzaGIer-0",
+        label: "README",
+        url: "https://github.com/malvisanochie1/caresync?tab=readme-ov-file",
       },
-      { label: "live", url: "https://www.eriggo.com/" },
     ],
-    liveUrl: "https://www.eriggo.com/",
+    liveUrl: "https://caresync-six.vercel.app/",
   },
   {
     id: 2,
-    title: "Plain HTML CSS and JS Exchange landing page",
+    title: "Eriggo",
+    subtitle: "Pixel-Perfect Marketing Website",
     description:
-      "HTML/CSS/JS landing site (Vercel) showcasing rates, services and mobile app downloads for Ridimit Exchange.",
-    image: "/home/work2.jpg",
-    links: [
-      { label: "live", url: "https://ridimit-exchange.vercel.app/" },
-      {
-        label: "github",
-      },
-    ],
-    liveUrl: "https://ridimit-exchange.vercel.app/",
-    category: "Plain HTML CSS and JS Exchange landing page",
-  },
-  {
-    id: 3,
-    title: "Responsive Trading site",
-    description:
-      "A trading site with lots of reuseable pages, built with Nextjs, typescript and Tailwind CSS for a fast, seamless user experience.",
-    image: "/home/work3.jpg",
+      "Converted a Figma design into a fully responsive Next.js and TypeScript application with meticulous attention to detail. Every section was implemented to closely match the original design while incorporating client-requested refinements and modern frontend best practices.",
+    image: "/home/work1.jpg",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     links: [
       {
-        label: "live",
-        url: "https://ebultrading.vercel.app/trading/buy_crypto",
+        label: "Figma",
+        url: "https://www.figma.com/design/dtk0yVzXhUUm1nUj83Ovbe/Eriggo?node-id=14266-33902&t=AVvPDRu6fdzaGIer-0",
       },
-      {
-        label: "github",
-        url: "https://github.com/malvisanochie1/ebultrading.git",
-      },
-    ],
-    liveUrl: "https://ebultrading.vercel.app/trading/buy_crypto",
-    githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
-    category: "Nextjs and Tailwind",
-  },
-  {
-    id: 4,
-    title: "Responsive trading dashboard",
-    description:
-      "crated this amazing trading dashboard with light and dark mode using nextjs, Shadcn, and tailwind css for a seamless user experience",
-    image: "/home/work4.jpg",
-    links: [
-      {
-        label: "live",
-        url: "https://csc-gamma.vercel.app/dashboard",
-      },
-    ],
-    liveUrl: "https://csc-gamma.vercel.app/dashboard",
-    githubUrl: "https://github.com/malvisanochie1/ebultrading.git",
-    category: "Nextjs, Shadcn, and Tailwind",
-  },
-  {
-    id: 5,
-    title: "A single site clone",
-    description:
-      "A client requested that I clone this single page site and add some light scroll animation exactly as seen and also make the last text before the footer to look exactly that way against the original design which I delivered the site I cloned will be linked to the 'clone' while the result will be in the 'live'",
-    image: "/home/work5.jpg",
-    links: [
-      { label: "live", url: "https://cryptogate-five.vercel.app/" },
-      {
-        label: "clone",
-        url: "https://dancing-croquembouche-036cfb.netlify.app/",
-      },
+      { label: "Live", url: "https://www.eriggo.com/" },
     ],
     liveUrl: "https://www.eriggo.com/",
   },
   {
-    id: 6,
-    title: "A single page blog site template",
+    id: 3,
+    title: "Financial Trading Platform",
+    subtitle: "Complete UI Redesign",
     description:
-      "A client wanted a quick single page site for his blog with no api connection just the responsive design and necessary animations which I delivered Please Note that this is just a template (skeleton) of the blog site no api connection yet",
-    image: "/home/work6.jpg",
-    links: [{ label: "live", url: "https://blogsite-kappa-indol.vercel.app/" }],
-    liveUrl: "https://blogsite-kappa-indol.vercel.app/",
+      "Independently redesigned the interface of a live trading platform from the ground up, creating a modern, responsive experience while preserving the platform's existing functionality. Designed and implemented the complete frontend without supervision, using reusable components and scalable UI patterns.",
+    image: "/home/portfolio1.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    links: [
+      { label: "Original", url: "https://test.13i7.com/" },
+      {
+        label: "Redesign",
+        url: "https://test-staging.on-forge.com/main/dashboard",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/ichie-benjamin/cfds-platform/branches",
+      },
+    ],
+    liveUrl: "https://test-staging.on-forge.com/main/dashboard",
   },
 ];

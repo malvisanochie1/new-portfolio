@@ -157,7 +157,7 @@ export default function MyServices() {
               <div className="w-7 h-7 gradient rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 bg-white rounded-sm"></div>
               </div>
-              <h2 className="text-white text-2xl font-bold">Core Expertise</h2>
+              <h2 className="text-white text-2xl font-bold">What I Bring to a Team</h2>
             </div>
             <p className="text-gray-400 text-sm max-w-2xl">
               I build modern, scalable, and performant web applications with
