@@ -58,13 +58,10 @@ export const HoverEffect: React.FC<HoverEffectProps> = ({
             <h2 className="text-white text-2xl font-bold">My Portfolio</h2>
           </div>
           <p className="text-gray-400 text-sm max-w-2xl">
-            Every project I create is built with a strong focus on clean design,
-            responsiveness, and performance. From concept to deployment, I
-            translate ideas into visually appealing and functional web
-            experiences using React, Next.js, and Tailwind CSS.
+          These projects represent real-world applications, client work, and personal builds that demonstrate my approach to frontend engineering. They showcase responsive design, reusable component architecture, API integration, performance optimization, and modern development practices using React, Next.js, TypeScript, and Tailwind CSS.
             <br />
             <br />
-            This collection showcases my work across different areas — from
+            This collection showcases my work across different areas, from
             landing pages and dashboards to reusable UI components and
             responsive layouts. Each project reflects my growth as a frontend
             developer and my ongoing transition into full-stack functionality

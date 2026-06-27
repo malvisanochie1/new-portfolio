@@ -14,7 +14,7 @@ import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import Link from "next/link";
 export const services = [
   {
-    title: "React & Next.js UI Development",
+    title: "Modern React & Next.js Development",
     description:
       "I build modern, fast-loading web apps using React and Next.js, leveraging reusable components, routing, and API integration.",
     gradient: "from-blue-600 to-cyan-600",
@@ -36,7 +36,7 @@ export const services = [
     ),
   },
   {
-    title: "Responsive Frontend Development",
+    title: "Responsive & Adaptive Interfaces",
     description:
       "I build fully responsive websites that adapt seamlessly across mobile, tablet, and desktop using HTML, CSS, and JavaScript.",
     gradient: "from-emerald-600 to-teal-600",
@@ -47,7 +47,7 @@ export const services = [
     ),
   },
   {
-    title: "Reusable Component Creation",
+    title: "Component-Driven Development",
     description:
       "I develop scalable UI components like cards, buttons, tabs, and modals to maintain consistency across your project.",
     gradient: "from-teal-600 to-green-600",
@@ -58,7 +58,7 @@ export const services = [
     ),
   },
   {
-    title: "UI Library Integration",
+    title: "Design System & UI Library Integration",
     description:
       "I integrate and customize components from libraries like Flowbite, Shadcn/UI, and Aeternity UI to match your brand identity.",
     gradient: "from-green-600 to-lime-600",
@@ -69,7 +69,7 @@ export const services = [
     ),
   },
   {
-    title: "Dashboard UI Development",
+    title: "Dashboard & SaaS Frontends",
     description:
       "I create clean, responsive dashboards with charts, tables, filters, and intuitive navigation for admin platforms.",
     gradient: "from-lime-600 to-yellow-600",
@@ -80,7 +80,7 @@ export const services = [
     ),
   },
   {
-    title: "Performance Optimization",
+    title: "Performance Engineering",
     description:
       "I implement best practices like lazy loading, efficient rendering, and layout stability for faster, smoother experiences.",
     gradient: "from-yellow-600 to-orange-600",
@@ -91,7 +91,7 @@ export const services = [
     ),
   },
   {
-    title: "Frontend Refactoring & Cleanup",
+    title: "Code Refactoring & Maintainability",
     description:
       "I optimize existing codebases by refactoring cluttered CSS/JS, organizing components, and improving maintainability.",
     gradient: "from-orange-600 to-rose-600",
@@ -102,7 +102,7 @@ export const services = [
     ),
   },
   {
-    title: "UI Bug Fixing & Performance Enhancement",
+    title: "Debugging & Performance Improvements",
     description:
       "I identify and fix layout, styling, or rendering issues to enhance responsiveness and performance.",
     gradient: "from-rose-600 to-fuchsia-600",
@@ -113,7 +113,7 @@ export const services = [
     ),
   },
   {
-    title: "Accessible & Headless UI Development",
+    title: "Accessible Frontend Development",
     description:
       "I build accessible, screen-reader-friendly components that follow WCAG and ARIA guidelines for inclusivity.",
     gradient: "from-fuchsia-600 to-violet-600",
@@ -124,7 +124,7 @@ export const services = [
     ),
   },
   {
-    title: "Version Control & Collaboration",
+    title: "Team Collaboration & Git Workflows",
     description:
       "I use Git and GitHub for efficient collaboration, versioning, and secure deployment workflows.",
     gradient: "from-violet-600 to-indigo-600",
@@ -157,13 +157,14 @@ export default function MyServices() {
               <div className="w-7 h-7 gradient rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 bg-white rounded-sm"></div>
               </div>
-              <h2 className="text-white text-2xl font-bold">My Services</h2>
+              <h2 className="text-white text-2xl font-bold">Core Expertise</h2>
             </div>
             <p className="text-gray-400 text-sm max-w-2xl">
-              I am a Frontend UI Developer specializing in building clean,
-              responsive, and visually appealing user interfaces with React,
-              Next.js, and modern UI frameworks. I turn design concepts into
-              pixel-perfect, high-performance digital experiences.
+              I build modern, scalable, and performant web applications with
+              React, Next.js, and TypeScript. My focus is on creating
+              maintainable frontend architectures, integrating APIs, optimizing
+              performance, and delivering intuitive user experiences across
+              devices.
             </p>
           </div>
         </motion.h1>

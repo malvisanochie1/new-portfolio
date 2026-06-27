@@ -79,9 +79,9 @@ const skillCategories: SkillCategory[] = [
   },
   {
     id: "learning",
-    title: "Currently Learning",
+    title: "Expanding Expertise",
     description: "Expanding my skillset",
-    skills: ["API integration", "Backend basics"],
+    skills: ["API integration", "Backend basics", "CRUD Operations", "Backend Fundamentals", "Node.js", "Express.js"],
     icon: <FaRocket size={20} className="text-gray-100" />,
     isLearning: true,
   },

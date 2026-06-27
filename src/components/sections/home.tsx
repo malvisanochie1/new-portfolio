@@ -166,10 +166,10 @@ export default function Homesec() {
 
             <motion.h1
               className="text-4xl md:text-5xl font-bold leading-tight"
-              variants={textVariants} 
+              variants={textVariants}
             >
               Frontend Engineer
-              <br className="hidden md:flex"/>
+              <br className="hidden md:flex" />
               <span className="text-[#ff3366] block md:inline text-glow-anim pl-2">
                 Building Modern
               </span>{" "}
@@ -190,8 +190,11 @@ export default function Homesec() {
               className="text-sm md:text-base text-gray-400 max-w-lg"
               variants={textVariants}
             >
-              Take your business to the next level with custom web development
-              solutions.
+              Frontend Engineer with 3+ years of hands-on experience building
+              scalable, responsive, and high-performance web applications using
+              React, Next.js, TypeScript, and modern frontend technologies.
+              Passionate about creating exceptional user experiences through
+              clean architecture, API integration, and maintainable code.
             </motion.p>
 
             {/* Animated Buttons */}
@@ -289,7 +292,7 @@ export default function Homesec() {
                   transition: { duration: 0.16 },
                 }}
               >
-                <p className="font-bold text-lg">80+</p>
+                <p className="font-bold text-lg">30+</p>
                 <p className="text-xs">Projects</p>
               </motion.div>
 
@@ -303,8 +306,8 @@ export default function Homesec() {
                 }}
                 style={{ animationDelay: "1.2s" }}
               >
-                <p className="font-bold text-lg">30+</p>
-                <p className="text-xs">Clients</p>
+                <p className="font-bold text-lg">3+</p>
+                <p className="text-xs">years</p>
               </motion.div>
 
               <motion.div
